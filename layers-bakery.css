@@ -35,7 +35,7 @@ body{
     padding: 5px 30px;
     cursor: pointer;
     background-color: rgb(197, 214, 221);
-    color: rgb(255, 0, 0);
+    color: black;
     border: 2px solid rgb(10, 109, 148);
     transition: 0.5s;
     border-radius: 25px;
