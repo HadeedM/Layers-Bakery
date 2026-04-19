@@ -3,51 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--css file link-->
+    <title>Layers Bakery</title>
     <link rel="stylesheet" href="layers-bakery.css">
-    <!-- icons link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <!--navbar-->
-    <div class="navbar">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
         <div class="left">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdyoqdDy9NA6PPsyi_oS3HdIFPPQhvJThbA&s" class="my-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdyoqdDy9NA6PPsyi_oS3HdIFPPQhvJThbA&s" class="my-logo" alt="Layers Bakery Logo">
+            <span class="brand-name">LAYERS</span>
         </div>
         <div class="right">
-            <button>Home</button>
-            <button>About Us</button>
-            <button>Track Order</button>
-            <button>Contact Us</button>
-            <button>Login/Registrar</button>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#track-order" class="nav-link">Track Order</a>
+            <a href="#contact" class="nav-link">Contact Us</a>
+            <a href="#" class="nav-link nav-login" onclick="openModal(event)">Login / Register</a>
         </div>
-    </div>
+    </nav>
 
-    <!--hero section-->
-    <div class="hero-sec">
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="hero-sec">
         <div class="sec-left">
             <h1 class="hero-heading">Layers</h1>
             <p class="detail">A layer cake consists of multiple, stacked sponge or butter cake sheets separated by fillings like frosting, jam, or custard, often covered in icing.</p>
-            <a href="https://layers.pk/" class="a-tag-btn">Official Website Link</a>
-            <a href="https://www.instagram.com/layers.bakeshop/?hl=en">
-              <button class="h-btn">Go To My Instagram</button>  
+            <a href="https://layers.pk/" class="a-tag-btn" target="_blank">Official Website</a>
+            <a href="https://www.instagram.com/layers.bakeshop/?hl=en" target="_blank">
+                <button class="h-btn">Go To Instagram</button>
             </a>
         </div>
         <div class="sec-right">
             <div class="c-form">
-                <h1>Gives Your Feedback!</h1>
+                <h1>Give Your Feedback!</h1>
                 <div class="input-flelds">
                     <div class="input-div">
-                        <label>full name</label>
-                        <input type="text" placeholder="full name" />
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Full name" />
                     </div>
                     <div class="input-div">
                         <label>Email Address</label>
-                        <input type="email" placeholder="email address" />
+                        <input type="email" placeholder="Email address" />
                     </div>
                     <div class="input-div">
                         <label>Phone Number</label>
@@ -55,155 +53,292 @@
                     </div>
                     <div class="input-div">
                         <label>Item</label>
-                        <input type="text" placeholder="Item" />
+                        <input type="text" placeholder="Item name" />
                     </div>
                     <div class="input-div">
                         <label>Feedback</label>
                         <textarea class="feedback" placeholder="Enter your feedback here!"></textarea>
                     </div>
                     <div class="input-div">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--cards-->
-    <div class="cards">
-        <!--card-1-->
+
+    <!-- ===== MENU / PRODUCTS SECTION ===== -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Our Signature Cakes</h2>
+        <div class="cards">
+            <!--card-1-->
         <div class="card">
             <img src="https://giftspak.com/wp-content/uploads/2024/09/layers-Raffaello.jpg">
             <div class="card-content">
                 <h1 class="title">Raffaello Cake</h1>
-                <p class="description">a luxurious,, white-layered dessert inspired by the popular Ferrero Raffaello coconut-almond candies, Ferrero Raffaello Cake.</p>
-                <h2 class="price">PKR 2200/-</h2>
+                <p class="description">A luxurious white-layered dessert inspired by the popular Ferrero Raffaello coconut-almond candies.</p>
+                <h2 class="price">PKR 2,200/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
         <!--card-2-->
         <div class="card">
-            <img src="https://layers.pk/wp-content/uploads/2021/11/Chocolate-Heaven.jpg">
+            <img src="https://layers.pk/wp-content/uploads/2021/11/Chocolate-Heaven.jpg" alt="Belgian Malt Cake">
             <div class="card-content">
                 <h1 class="title">Belgian Malt Cake</h1>
-                <p class="description">a luxurious, decadent dessert characterized by its intense, rich, and velvety texture, crafted using high-quality Belgian dark chocolate.</p>
-                <h2 class="price">PKR 1800/-</h2>
+                <p class="description">A luxurious, decadent dessert crafted using high-quality Belgian dark chocolate with a rich, velvety texture.</p>
+                <h2 class="price">PKR 1,800/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
         <!--card-3-->
         <div class="card">
-            <img src="https://layers.pk/wp-content/uploads/2021/11/Malteser.jpg">
+            <img src="https://layers.pk/wp-content/uploads/2021/11/Malteser.jpg" alt="Maltesers Cake">
             <div class="card-content">
                 <h1 class="title">Maltesers Cake</h1>
-                <p class="description">a rich, indulgent dessert featuring soft, moist malted chocolate sponge layers, often filled and frosted with a smooth milk.</p>
-                <h2 class="price">PKR 3000/-</h2>
+                <p class="description">A rich, indulgent dessert featuring soft, moist malted chocolate sponge layers frosted with smooth milk.</p>
+                <h2 class="price">PKR 3,000/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
         <!--card-4-->
         <div class="card">
-            <img src="https://layers.pk/wp-content/uploads/2021/11/Lotus.jpg">
+            <img src="https://layers.pk/wp-content/uploads/2021/11/Lotus.jpg" alt="Lotus Cake">
             <div class="card-content">
                 <h1 class="title">Lotus Cake</h1>
-                <p class="description">a popular, indulgent dessert centered around the distinct, caramelized flavor of Belgian Lotus Biscoff cookies and cookie butter spread.</p>
-                <h2 class="price">PKR 2700/-</h2>
+                <p class="description">A popular indulgent dessert centered around the distinct caramelized flavor of Belgian Lotus Biscoff cookies.</p>
+                <h2 class="price">PKR 2,700/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
-    </div>
-    <!--sec-cards-->
-    <div class="sec-cards">
+        </div>
+        <div class="cards">
         <!--card-5-->
-        <div class="sec-card">
-            <img src="https://layers.pk/wp-content/uploads/2021/11/Milky-Malt.jpg">
-            <div class="sec-card-content">
+        <div class="card">
+            <img src="https://layers.pk/wp-content/uploads/2021/11/Milky-Malt.jpg" alt="Milky Malt Cake">
+            <div class="card-content">
                 <h1 class="title">Milky Malt Cake</h1>
-                <p class="description">a decadent dessert featuring layers of soft, moist sponge—often chocolate—infused with a rich, malty, and creamy milk flavor.</p>
-                <h2 class="price">PKR 1700/-</h2>
+                <p class="description">A decadent dessert featuring layers of soft, moist sponge infused with a rich, malty, and creamy milk flavor.</p>
+                <h2 class="price">PKR 1,700/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
         <!--card-6-->
-        <div class="sec-card">
-            <img src="https://layers.pk/wp-content/uploads/2021/11/Red-Velvet.jpg">
-            <div class="sec-card-content">
+        <div class="card">
+            <img src="https://layers.pk/wp-content/uploads/2021/11/Red-Velvet.jpg" alt="Red Velvet Cake">
+            <div class="card-content">
                 <h1 class="title">Red Velvet Cake</h1>
-                <p class="description">a classic American dessert known for its striking crimson or deep maroon color, soft "velvety" crumb, and subtle tang.</p>
-                <h2 class="price">PKR 2600/-</h2>
+                <p class="description">A classic American dessert known for its striking crimson color, soft velvety crumb, and subtle tang.</p>
+                <h2 class="price">PKR 2,600/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
         <!--card-7-->
-        <div class="sec-card">
-            <img src="https://sendflowers.pk/wp-content/uploads/2022/05/Ferrero-Rocher.jpg">
-            <div class="sec-card-content">
+        <div class="card">
+            <img src="https://sendflowers.pk/wp-content/uploads/2022/05/Ferrero-Rocher.jpg" alt="Ferrero Rocher Cake">
+            <div class="card-content">
                 <h1 class="title">Ferrero Rocher Cake</h1>
-                <p class="description">a luxurious, multi-layered chocolate dessert inspired by the famous hazelnut chocolates. It features rich, moist chocolate. </p>
-                <h2 class="price">PKR 3500/-</h2>
+                <p class="description">A luxurious, multi-layered chocolate dessert inspired by the famous hazelnut chocolates.</p>
+                <h2 class="price">PKR 3,500/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
         <!--card-8-->
-        <div class="sec-card">
-            <img src="https://flowerhouse.pk/cdn/shop/files/Lotus-Three-Milk-Cake.jpg?v=1754826711">
-            <div class="sec-card-content">
-                <h1 class="title">Lotus Three Milk Cake</h1>
-                <p class="description">a moist, indulgent dessert featuring a light vanilla sponge soaked in a creamy blend of three milks and whole milk.</p>
-                <h2 class="price">PKR 3200/-</h2>
+        <div class="card">
+            <img src="https://flowerhouse.pk/cdn/shop/files/Lotus-Three-Milk-Cake.jpg?v=1754826711" alt="Lotus Three Milk Cake">
+            <div class="card-content">
+                <h1 class="title">Lotus Three Milk</h1>
+                <p class="description">A moist, indulgent dessert featuring light vanilla sponge soaked in a creamy blend of three milks.</p>
+                <h2 class="price">PKR 3,200/-</h2>
                 <button class="btn">Buy Now</button>
             </div>
         </div>
-    </div>
-    <!--contact us-->
+        </div>
+    </section>
+
+    <!-- ===== ABOUT US SECTION ===== -->
+    <section id="about" class="about-sec">
+        <div class="about-inner">
+            <div class="about-text">
+                <h2 class="section-title">About Us</h2>
+                <p>Founded in <strong>2020</strong> in the heart of Lahore, <strong>Layers Bakeshop</strong> was born from a simple passion — crafting extraordinary cakes that tell a story with every slice.</p>
+                <p>We specialize in premium, handcrafted layered cakes made with the finest Belgian chocolate, fresh cream cheese, and rich mousse fillings. From our iconic Lotus Biscoff to our indulgent Belgian Malt, every cake is a masterpiece.</p>
+                <p>Our mission is to bring joy to every celebration — birthdays, weddings, Eid, and everyday indulgences.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Years of Baking</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Cake Varieties</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>City Locations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://layers.pk/wp-content/uploads/2021/11/Chocolate-Heaven.jpg" alt="About Layers Bakery">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TRACK ORDER SECTION ===== -->
+    <section id="track-order" class="track-sec">
+        <h2 class="section-title">Track Your Order</h2>
+        <p class="section-sub">Enter your order ID to check the current status of your delivery.</p>
+        <div class="track-form-wrap">
+            <div class="track-form">
+                <div class="track-input-row">
+                    <input type="text" id="order-id-input" placeholder="Enter Order ID (e.g. LB-20240419)" />
+                    <button onclick="trackOrder()">Track</button>
+                </div>
+                <div id="track-result" class="track-result hidden">
+                    <div class="track-steps">
+                        <div class="step done">
+                            <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+                            <p>Order Placed</p>
+                        </div>
+                        <div class="step-line done-line"></div>
+                        <div class="step done">
+                            <div class="step-icon"><i class="fa-solid fa-check"></i></div>
+                            <p>Confirmed</p>
+                        </div>
+                        <div class="step-line done-line"></div>
+                        <div class="step active">
+                            <div class="step-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                            <p>Baking</p>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step">
+                            <div class="step-icon"><i class="fa-solid fa-truck"></i></div>
+                            <p>Out for Delivery</p>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step">
+                            <div class="step-icon"><i class="fa-solid fa-house"></i></div>
+                            <p>Delivered</p>
+                        </div>
+                    </div>
+                    <p class="track-status-msg">Your order is currently being <strong>baked with love</strong>. Estimated delivery: <strong>2–3 hours</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT US SECTION ===== -->
+    <section id="contact" class="contact-sec">
+        <h2 class="section-title light">Contact Us</h2>
+        <p class="section-sub light">We'd love to hear from you. Reach out for orders, inquiries, or just to say hello!</p>
+        <div class="contact-inner">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+92 324 0503155</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>layers@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Lahore, Pakistan</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Daily: 10:00 AM – 11:00 PM</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/layers.bakeshop/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://play.google.com/store/apps/details?id=pk.layers.twa" target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                    <a href="https://apps.apple.com/app/layers-bakeshop/id1613423494" target="_blank"><i class="fa-brands fa-app-store-ios"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="input-div">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your full name" />
+                </div>
+                <div class="input-div">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Your email" />
+                </div>
+                <div class="input-div">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Subject" />
+                </div>
+                <div class="input-div">
+                    <label>Message</label>
+                    <textarea placeholder="Write your message here..."></textarea>
+                </div>
+                <button class="contact-submit-btn">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== APP DOWNLOAD SECTION ===== -->
     <div class="container">
         <h1>Indulge Yourself into The Glimpse Of Heaven</h1>
-        <p>iOS and Android Download our new app to place order instantly on the go! Also stay updated to our latest offers & promotions!</p>
+        <p>iOS and Android — Download our new app to place orders instantly on the go! Stay updated with our latest offers &amp; promotions!</p>
         <div class="total-content">
             <div class="sub-container">
-            <a href="https://play.google.com/store/apps/details?id=pk.layers.twa" class="a-tag-sub-btn">Play Store</a>
+                <a href="https://play.google.com/store/apps/details?id=pk.layers.twa" class="a-tag-sub-btn" target="_blank">Play Store</a>
             </div>
             <div class="vid">
-                <iframe 
-                    class="yt-vid"
-                    src="https://www.youtube.com/embed/QZjb8jaDvcU"allowfullscreen>
-                </iframe>
+                <iframe class="yt-vid" src="https://www.youtube.com/embed/QZjb8jaDvcU" allowfullscreen></iframe>
             </div>
             <div class="ps-container">
-                <a href="https://apps.apple.com/app/layers-bakeshop/id1613423494">
-                <button class="h-sub-btn">Apple Store</button>  
+                <a href="https://apps.apple.com/app/layers-bakeshop/id1613423494" target="_blank">
+                    <button class="h-sub-btn">Apple Store</button>
                 </a>
-            </div>  
+            </div>
         </div>
     </div>
-    <!--footer-->
+
+    <!-- ===== FOOTER ===== -->
     <footer class="footer-sec">
         <div class="tabs">
             <div class="section-1">
                 <h1>Details</h1>
-                <p>Layers Bakeshop (founded 2020, Lahore) offers a variety of premium, layered cakes, including bestsellers like Lotus, Belgian Malt, and Nutella, generally available in 2.5 LBS sizes. Known for rich flavors, they specialize in Cream Cheese, Mousse, and Fudge cakes, often featuring unique toppings like caramelized honey or roasted hazelnuts. </p>
+                <p>Layers Bakeshop (founded 2020, Lahore) offers premium, layered cakes including bestsellers like Lotus, Belgian Malt, and Nutella. Known for rich flavors, specializing in Cream Cheese, Mousse, and Fudge cakes.</p>
             </div>
-            <!--menu tabs sec-2-->
             <div class="section-2">
                 <h1>Collections</h1>
                 <div class="btn-align">
-                <a>Cakes</a>
-                <a>Brownies</a>
-                <a>Donuts</a>
-                <a>Sundey's</a>    
+                    <a href="#">Cakes</a>
+                    <a href="#">Brownies</a>
+                    <a href="#">Donuts</a>
+                    <a href="#">Sundaes</a>
                 </div>
             </div>
-           <!--menu tabs sec-3-->
             <div class="section-3">
                 <h1>Moments</h1>
                 <div class="btn-align">
-                <a>Birthdays</a>
-                <a>Wedding</a>
-                <a>Eid</a>
-                <a>Events</a>    
+                    <a href="#">Birthdays</a>
+                    <a href="#">Weddings</a>
+                    <a href="#">Eid</a>
+                    <a href="#">Events</a>
                 </div>
             </div>
-            <!--menu tabs sec-4-->
             <div class="section-4">
                 <h1>Contact Us</h1>
                 <div class="btn-align">
@@ -217,14 +352,100 @@
                     </div>
                     <div class="p-icon">
                         <i class="fa-solid fa-map-pin"></i>
-                        <p>Pakistan.</p>
+                        <p>Lahore, Pakistan</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            © Layers Bakeshop | Powered by MATZ Solutions.
+            &copy; 2024 Layers Bakeshop | Powered by MATZ Solutions.
         </div>
     </footer>
+
+    <!-- ===== LOGIN / REGISTER MODAL ===== -->
+    <div id="auth-modal" class="modal-overlay" onclick="closeModalOutside(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-tabs">
+                <button class="tab-btn active" onclick="switchTab('login', this)">Login</button>
+                <button class="tab-btn" onclick="switchTab('register', this)">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form active">
+                <h2>Welcome Back!</h2>
+                <div class="input-div">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" />
+                </div>
+                <div class="input-div">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" />
+                </div>
+                <div class="auth-options">
+                    <label><input type="checkbox" /> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button class="auth-submit-btn">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" onclick="switchTab('register', document.querySelectorAll('.tab-btn')[1])">Register</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="auth-form">
+                <h2>Create Account</h2>
+                <div class="input-div">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your full name" />
+                </div>
+                <div class="input-div">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" />
+                </div>
+                <div class="input-div">
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="+92324*******" />
+                </div>
+                <div class="input-div">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" />
+                </div>
+                <div class="input-div">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" />
+                </div>
+                <button class="auth-submit-btn">Register</button>
+                <p class="auth-switch">Already have an account? <a href="#" onclick="switchTab('login', document.querySelectorAll('.tab-btn')[0])">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(e) {
+            e.preventDefault();
+            document.getElementById('auth-modal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('auth-modal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        function closeModalOutside(e) {
+            if (e.target === document.getElementById('auth-modal')) closeModal();
+        }
+        function switchTab(tab, btn) {
+            document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tab + '-form').classList.add('active');
+            btn.classList.add('active');
+        }
+        function trackOrder() {
+            const id = document.getElementById('order-id-input').value.trim();
+            if (!id) {
+                alert('Please enter an Order ID.');
+                return;
+            }
+            document.getElementById('track-result').classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
